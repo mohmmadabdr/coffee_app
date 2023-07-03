@@ -1,8 +1,8 @@
 // ignore_for_file: unnecessary_brace_in_string_interps, non_constant_identifier_names, prefer_const_constructors
 
-import 'package:ecommerce/Shared/Resource/color_mangment.dart';
-import 'package:ecommerce/Shared/Resource/font_mangment.dart';
-import 'package:ecommerce/Shared/Resource/size_mangment.dart';
+import 'package:coffee_app/Shared/Resource/color_mangment.dart';
+import 'package:coffee_app/Shared/Resource/font_mangment.dart';
+import 'package:coffee_app/Shared/Resource/size_mangment.dart';
 import 'package:flutter/material.dart';
 
 Widget botton({

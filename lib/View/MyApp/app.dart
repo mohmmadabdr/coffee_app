@@ -1,4 +1,4 @@
-import 'package:ecommerce/Shared/Resource/theme_mangment.dart';
+import 'package:coffee_app/Shared/Resource/theme_mangment.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

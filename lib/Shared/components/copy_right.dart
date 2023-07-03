@@ -1,10 +1,10 @@
 // ignore: file_names
 // ignore_for_file: file_names, duplicate_ignore
 
-import 'package:ecommerce/Shared/Resource/view_mangment.dart';
-import 'package:ecommerce/Shared/components/text_widget.dart';
+import 'package:coffee_app/Shared/Resource/view_mangment.dart';
+import 'package:coffee_app/Shared/components/text_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:ecommerce/Shared/Resource/size_mangment.dart';
+import 'package:coffee_app/Shared/Resource/size_mangment.dart';
 
 Widget copyright({
   var colorText,

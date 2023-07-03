@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ecommerce/Shared/Resource/view_mangment.dart';
+import 'package:coffee_app/Shared/Resource/view_mangment.dart';
 
 class FloatingActionBubble extends AnimatedWidget {
   const FloatingActionBubble({

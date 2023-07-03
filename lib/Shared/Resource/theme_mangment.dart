@@ -1,4 +1,4 @@
-import 'package:ecommerce/Shared/Resource/color_mangment.dart';
+import 'package:coffee_app/Shared/Resource/color_mangment.dart';
 import 'package:flutter/material.dart';
 
 ThemeData applicationTheme(BuildContext context) => ThemeData(

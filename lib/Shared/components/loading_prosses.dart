@@ -5,7 +5,7 @@ library easy_splash_screen;
 import 'dart:async';
 import 'dart:core';
 
-import 'package:ecommerce/Shared/Resource/view_mangment.dart';
+import 'package:coffee_app/Shared/Resource/view_mangment.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
