@@ -1,3 +1,4 @@
+import 'package:coffee_app/Shared/Resource/color_mangment.dart';
 import 'package:coffee_app/Shared/Resource/images_mangment.dart';
 import 'package:coffee_app/Shared/Resource/size_mangment.dart';
 import 'package:flutter/material.dart';
@@ -7,16 +8,18 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: ColorManagement.colorPrimary,
       body: Stack(
         children: [
           Align(
             alignment: Alignment.topCenter,
-            child: FractionallySizedBox(
-              heightFactor: 0.6,
-              child: Image.asset(
-                BaseImage.coffee_background,
-                fit: BoxFit.cover,
+            child: Container(
+              width: Get.width,
+              child: FractionallySizedBox(
+                child: Image.asset(
+                  BaseImage.coffee_background,
+                  fit: BoxFit.fill,
+                ),
               ),
             ),
           ),
