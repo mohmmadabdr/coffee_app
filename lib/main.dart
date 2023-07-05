@@ -1,18 +1,14 @@
-import 'package:coffee_app/screens/PProfile.dart';
+import 'package:coffee_app/View/MyApp/app.dart';
 import 'package:flutter/material.dart';
-import 'screens/profilescreen.dart';
-import 'screens/Profile.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+import 'firebase_options.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+ await Firebase.initializeApp(
+   options: DefaultFirebaseOptions.currentPlatform,
+ );
   runApp(MyApp());
 }
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: ProfileScreen(),
-    );
-  }
-}
+ 
