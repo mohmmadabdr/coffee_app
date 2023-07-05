@@ -1,6 +1,8 @@
+import 'package:coffee_app/Shared/Binding/loading_binding.dart';
 import 'package:coffee_app/Shared/Binding/login_binding.dart';
 import 'package:coffee_app/Shared/Binding/register_binding.dart';
 import 'package:coffee_app/Shared/Binding/start_binding.dart';
+import 'package:coffee_app/View/Loading/loading_page.dart';
 import 'package:coffee_app/View/Login/login_page.dart';
 import 'package:coffee_app/View/Regester/regester_page.dart';
 import 'package:coffee_app/View/Start/start_page.dart';
@@ -13,11 +15,11 @@ class BaseRoute {
         //   page: HomePage(),
         //   binding: HomeBinding(),
         // ),
-        // // _getPage(
-        // //   name: PageTo.loading,
-        // //   page: const LoadingPage(),
-        // //   binding: BindingLoading(),
-        // // ),
+        _getPage(
+          name: PageTo.loading,
+          page: const LoadingPage(),
+          binding: LoadingBinding(),
+        ),
         // _getPage(
         //   name: PageTo.onboarding,
         //   page: const OnBoardingPage(),
@@ -30,7 +32,7 @@ class BaseRoute {
         ),
         _getPage(
           name: PageTo.login,
-          page: LoginPage(),
+          page: const LoginPage(),
           binding: LoginBinding(),
         ),
         // _getPage(
@@ -47,7 +49,7 @@ class BaseRoute {
         _getPage(
           transitionScreen: Transition.rightToLeft,
           name: PageTo.regester,
-          page: RegsterPage(),
+          page: const RegsterPage(),
           binding: RegisterBinding(),
         ),
         // // _getPage(
@@ -88,4 +90,5 @@ class PageTo {
   static const start = "/Stert";
   static const forgotPassword = '/ForgotPassword';
   static const completeprofile = '/CompleteProfile';
+  static const loading = '/Loading';
 }

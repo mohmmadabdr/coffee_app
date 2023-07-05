@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class ColorManagement {
-  static Color colorPrimaryLight = const Color(0xffffddd2);
-  static Color colorPrimary = const Color(0xffff7642);
+  static Color colorPrimaryLight = const Color(0xfff5edda);
+  static Color colorPrimary = const Color(0xff363636);
+  static Color colorPrimaryDark = const Color(0xff98694f);
   static Color colorSecondary = const Color.fromARGB(255, 193, 173, 61);
   static LinearGradient gColor = const LinearGradient(
       begin: Alignment.topLeft,
@@ -15,5 +16,4 @@ class ColorManagement {
   static Color colorWhite = const Color(0xffffffff);
   static Color colorWhiteDark = const Color(0xFFf6f6f6);
   static Color colorTrans = Colors.transparent;
-
 }
