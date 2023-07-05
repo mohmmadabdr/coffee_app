@@ -1,6 +1,7 @@
 import 'package:coffee_app/Shared/Resource/color_mangment.dart';
 import 'package:coffee_app/Shared/Resource/images_mangment.dart';
 import 'package:coffee_app/Shared/Resource/size_mangment.dart';
+import 'package:coffee_app/Shared/Resource/view_mangment.dart';
 import 'package:coffee_app/Shared/components/text_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -18,7 +19,7 @@ class StartPage extends StatelessWidget {
             color: ColorManagement.colorBlack,
             image: DecorationImage(
                 opacity: 0.3,
-                fit: BoxFit.cover,
+                fit: BoxFit.fill,
                 image: AssetImage(BaseImage.background_start))),
         child: Column(
           children: [
@@ -40,12 +41,25 @@ class StartPage extends StatelessWidget {
               decoration: BoxDecoration(
                   color: ColorManagement.colorPrimaryLight,
                   borderRadius: BorderRadius.circular(40)),
-              // child: TextWidget(
-              //     Title: "Login",
-              //     colorText: ColorManagement.colorPrimary,
-              //     FontSize: FontSize.s20),
+              child: Padding(
+                padding: EdgeInsets.all(14),
+                child: TextWidget(
+                    Title: "Login",
+                    colorText: ColorManagement.colorPrimary,
+                    FontSize: FontSize.s30),
+              ),
             ),
-            // TextWidget(Title: "Title")
+            Padding(
+              padding: EdgeInsets.only(
+                  top: PaddingEdit.p10, bottom: PaddingEdit.p20),
+              child: TextWidget(
+                Title: "Register Me!",
+                colorText: ColorManagement.colorPrimaryLight,
+                customFont: 'Montserrat-VariableFont_wght',
+                FontWeight: FontWeight.bold,
+                FontSize: FontSize.s16,
+              ),
+            ),
           ],
         ),
       ),

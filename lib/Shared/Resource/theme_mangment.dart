@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 ThemeData applicationTheme(BuildContext context) => ThemeData(
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
           backgroundColor: Colors.transparent),
-      fontFamily: 'Muli',
+      fontFamily: 'Lobster-Regular',
       canvasColor: ColorManagement.colorWhiteDark,
       unselectedWidgetColor: ColorManagement.colorGreyLight,
       appBarTheme: AppBarTheme(
@@ -13,7 +13,7 @@ ThemeData applicationTheme(BuildContext context) => ThemeData(
           color: ColorManagement.colorPrimary,
         ),
         titleTextStyle: TextStyle(
-          fontFamily: 'Muli',
+          fontFamily: 'Lobster-Regular',
           color: ColorManagement.colorPrimary,
         ),
         centerTitle: true,
